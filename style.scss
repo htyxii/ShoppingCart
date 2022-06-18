@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+
+/* Creating and Using Variables */
+    
+$fonts: 'Poppins', Helvertica, sans-serif;
+$primary-color: #ab99ca;
+$spacing: 2rem;
+   
+body {
+    // font-family: $fonts;
+    font-family: 'Noto Sans TC', sans-serif;
+    // // background-color: $primary-color;
+    // padding: $spacing;
+    // min-height: 100vh;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    
+}
+
+.menu {
+  @media all and (max-width: 768px) {
+      justify-content: center;
+    }
+  // border: 1px solid red;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  width: 75%;
+  margin: auto;
+
+  nav {
+    @media all and (max-width: 768px) {
+      display: none;
+    }
+    display: flex;
+    // border: 1px solid red;
+    width: 384px;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      color: black;
+      text-decoration: none;
+      font-weight: 500;
+    } 
+  }
+  .menuLogo {
+    width: 169.83px;
+    text-align: center;
+  }
+
+  .menuIcons {
+    @media all and (max-width: 768px) {
+      display: none;
+    }
+    width: 132px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.content {
+  border: 1px solid red;
+  width: 75%;
+  margin: auto;
+}
+
+.leftContent {
+  margin-top: 5rem;
+  border: 1px solid blue;
+  width: 55%;
+  .stepper {
+    display: flex;
+
+  }
+}
+
